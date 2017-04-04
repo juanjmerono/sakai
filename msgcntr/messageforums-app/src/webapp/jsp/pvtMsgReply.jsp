@@ -79,7 +79,7 @@
 			<f:verbatim></h3></div></f:verbatim>
 	</h:panelGroup>	
 		
-		
+	<div class="container_messages">		
 	<%--//designNote: gsilver:commenting this header out as redundant--%>		
       <%-- <sakai:tool_bar_message value="#{msgs.pvt_reply}" />--%> 
 
@@ -295,7 +295,7 @@
         <sakai:button_bar_item action="#{PrivateMessagesTool.processPvtMsgCancelToDetailView}" value="#{msgs.pvt_cancel}" accesskey="x" />
       </sakai:button_bar>
     </h:form>
-
+	</div>
   </sakai:view>
 </f:view> 
 

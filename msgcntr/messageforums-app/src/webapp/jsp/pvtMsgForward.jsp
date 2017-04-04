@@ -81,7 +81,7 @@
 			<f:verbatim></h3></div></f:verbatim>
 	</h:panelGroup>
 
-
+	<div class="container_messages">
 			<div class="instruction">
  			  <h:outputText value="#{msgs.cdfm_required}"/> <h:outputText value="#{msgs.pvt_star}" styleClass="reqStarInline"/>
 		  </div>
@@ -282,7 +282,7 @@
         <sakai:button_bar_item action="#{PrivateMessagesTool.processPvtMsgCancelToDetailView}" value="#{msgs.pvt_cancel}" accesskey="x" />
       </sakai:button_bar>
     </h:form>
-
+	</div>
   </sakai:view>
 </f:view> 
 
