@@ -184,6 +184,11 @@
             <groupId>org.mockito</groupId>
             <artifactId>mockito-core</artifactId>
         </dependency>
+                <dependency>
+                    <groupId>mysql</groupId>
+                    <artifactId>mysql-connector-java</artifactId>
+                    <scope>test</scope>
+                </dependency>
         <dependency>
             <groupId>org.hsqldb</groupId>
             <artifactId>hsqldb</artifactId>
@@ -200,7 +205,20 @@
         </dependency>
     </dependencies>
 
+    <properties>
+        <buildDirectory>${project.basedir}/target</buildDirectory>
+    </properties>
+
+    <profiles>
+        <profile>
+            <id>newtarget</id>
+            <properties>
+                <buildDirectory>${project.basedir}/target/target</buildDirectory>
+            </properties>
+        </profile>
+    </profiles>
     <build>
+        <directory>${buildDirectory}</directory>
         <resources>
             <resource>
                 <directory>${basedir}/src/sql</directory>
